@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tptAppKodutoo.Views.Ajatabel"
+             xmlns:views="clr-namespace:tptAppKodutoo.Views"
+             xmlns:viewModels="clr-namespace:tptAppKodutoo.ViewModels;assembly=tptAppKodutoo"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <viewModels:AjatabelViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Image Source="https://puu.sh/AqOIQ.png" WidthRequest="800" HeightRequest="300" ></Image>
+    </ContentPage.Content>
+</ContentPage>

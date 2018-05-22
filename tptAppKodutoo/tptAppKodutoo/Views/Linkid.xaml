@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tptAppKodutoo.Views.Linkid"
+             xmlns:views="clr-namespace:tptAppKodutoo.Views"
+             xmlns:viewModels="clr-namespace:tptAppKodutoo.ViewModels;assembly=tptAppKodutoo"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <viewModels:LinkideViewModel/>
+    </ContentPage.BindingContext>
+        
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#2196F3</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Button Margin="0,0,0,0" Text="Siseveeb" Command="{Binding OpenLinkSiseveeb}" BackgroundColor="{StaticResource Primary}" TextColor="White" WidthRequest="300" />
+            <Button Margin="0,0,0,0" Text="Raamatukogu" Command="{Binding OpenLinkRaamatukogu}" BackgroundColor="{StaticResource Primary}" TextColor="White" WidthRequest="300" />
+            <Button Margin="0,0,0,0" Text="Õppetoetused" Command="{Binding OpenLinkToetused}" BackgroundColor="{StaticResource Primary}" TextColor="White" WidthRequest="300" />
+            <Button Margin="0,0,0,0" Text="Sisekorraeeskiri" Command="{Binding OpenLinkEeskiri}" BackgroundColor="{StaticResource Primary}" TextColor="White" WidthRequest="300" />
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
