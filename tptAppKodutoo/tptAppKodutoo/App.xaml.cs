@@ -18,8 +18,11 @@ namespace tptAppKodutoo
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            AppCenter.Start("android=50656c02-4185-4719-af89-2d1cdc2f43a1;" +
+                  "uwp={Your UWP App secret here};" +
+                  "ios={Your iOS App secret here}",
+                  typeof(Analytics), typeof(Crashes));
+        }
 
 		protected override void OnSleep ()
 		{
